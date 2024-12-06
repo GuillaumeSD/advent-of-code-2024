@@ -1,19 +1,49 @@
 🎁🎄Welcome to Advent of Code 2024 !🎄🎁
 ==================
 
-Welcome to Guiild's repository for the **Advent of code 2024**! The aim is to share our best ideas of solution for each exercise.
+This repository contains my solutions to the [Advent of Code 2024](https://adventofcode.com/2024) challenges built with [Node.js](https://nodejs.org) and [TypeScript](https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html).
 
-https://adventofcode.com/
+## Running any day's solution locally
 
-Guiild's leaderboard (there will be rewards 🏅): **https://adventofcode.com/2024/leaderboard/private** code **3344550-254f8d6f**
+At least [Node.js](https://nodejs.org) 22.11 is required.
 
-Come discuss your solution with us on **Discord** https://discord.gg/guiild-s-server-938550433381773343
+Install the dependencies :
+```bash
+npm i
+```
 
-Project folder structure
-=============================== 
-* Fork the project
-* Create a directory named with the day of the challange and the language you used (eg **day-1-TS**)
-* Submit a Pull Request on main, with the same naming, so we can explore and discuss all solutions !
+Given X is the day number, change the `input.ts` file in the day-X-TS folder with the following content :
+```typescript
+export const input = `your day raw input here`;
+```
 
+Build :
+```bash
+npm run build
+```
 
- Enjoy the challenge 🤯🎄
+Given X is the day number :
+```bash
+npm run start:dayX
+```
+
+## Running any day's solution locally in dev mode
+
+At least [Node.js](https://nodejs.org) 22.11 is required.
+
+Install the dependencies :
+```bash
+npm i
+```
+
+Given X is the day number, change the `input.ts` file in the day-X-TS folder with the following content :
+```typescript
+export const input = `paste your day raw input here`;
+```
+
+Change accordingly the day number in the `npm run dev` script in the package.json file, then :
+```bash
+npm run dev
+```
+
+Your terminal ouput will automatically refresh on any source file change.
