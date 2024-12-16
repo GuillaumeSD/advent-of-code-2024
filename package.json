@@ -1,7 +1,7 @@
 {
   "scripts": {
     "build": "tsc",
-    "dev": "concurrently \"tsc -w --preserveWatchOutput\" \"node --watch dist/day-14-TS/index.js\"",
+    "dev": "concurrently \"tsc -w --preserveWatchOutput\" \"node --watch dist/day-15-TS/index.js\"",
     "lint": "tsc --noEmit",
     "start:day1": "node dist/day-1-TS",
     "start:day2": "node dist/day-2-TS",
@@ -16,7 +16,8 @@
     "start:day11": "node dist/day-11-TS",
     "start:day12": "node dist/day-12-TS",
     "start:day13": "node dist/day-13-TS",
-    "start:day14": "node dist/day-14-TS"
+    "start:day14": "node dist/day-14-TS",
+    "start:day15": "node dist/day-15-TS"
   },
   "devDependencies": {
     "concurrently": "^9.1.0",
