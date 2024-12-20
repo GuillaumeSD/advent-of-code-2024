@@ -24,7 +24,7 @@ npm run build
 
 Given X is the day number :
 ```bash
-npm run start:dayX
+npm run dayX
 ```
 
 ## Running any day's solution locally in dev mode
