@@ -13,7 +13,6 @@ interface Shortcut {
 const inputMap: Map = rawInput.split("\n").map((line) => line.split(""));
 
 // Shared functions
-
 const getStartingCoordinates = (inputMap: Map): Coordinates => {
   const i = inputMap.findIndex((row) => row.includes("S"));
   const j = inputMap[i].indexOf("S");
@@ -155,10 +154,6 @@ const getAllShortcuts = (
   return shortcuts;
 };
 
-// const logMap = (map: MapWithInfo) => {
-//   console.log(map.map((row) => row.join(" ")).join("\n"));
-// };
-
 // Part 1
 const startingCoordinates = getStartingCoordinates(inputMap);
 const { steps, map: mapWithInfo } = getMapWithPathInfo(
@@ -176,7 +171,6 @@ console.log(
 
 // Part 2
 const shortcutsPartTwo = getAllShortcuts(mapWithInfo, 20);
-// 42240 too low
 console.log(
   "Part two answer",
   shortcutsPartTwo.filter((s) => s.steps >= 100).length
